@@ -13,21 +13,33 @@ eggs/
 # Entornos virtuales
 venv/
 env/
+
+# Archivos de configuración con credenciales
 .env
 
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
+# Datos persistentes (Docker stacks)
+stack_data/
+
+# Archivos específicos de la máquina
+STATUS.md
+AUDIT.md
 
 # Tests con credenciales locales
-tests/ldap/test_ldap_starttls.py
-tests/ldap/test_ldaps_simple.py
-tests/ldap/test_ldaps_selfsigned.py
-tests/ldap/test_ldaps_versions.py
-tests/ldap/LDAPS_TEST_RESULTS.md
+*tests*
 
 # Logs y temporales
 *.log
 *.tmp
+*.swp
+*.swo
+*~
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDE y herramientas
+.vscode/
+.idea/
+*.code-workspace
+.claude/
